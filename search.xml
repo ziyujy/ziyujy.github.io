@@ -1,6 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>database01</title>
+    <url>/2019/10/27/database01/</url>
+    <content><![CDATA[<p>大千世界，姿态各异，芸芸众生，飘飘渺渺。</p>
+<p>数据，无处不在，从你的脑海里回忆出来的事物都可以称之为数据，经过分类，整理，可以得出不同类型的数据。数据的形式都种多样，包括文字，图像，视频，声音，图片，等等。</p>
+<p>经过对数据的<em>分类</em>  <em>整理</em>  <em>提炼</em> ，我们可以判断出自己想要预测的东西，习惯练习使自己拥有数据思维的意识。</p>
+<h1 id="数据库系统概述"><a href="#数据库系统概述" class="headerlink" title="数据库系统概述"></a>数据库系统概述</h1><h2 id="先来简单说一下数据库的4个基本概念"><a href="#先来简单说一下数据库的4个基本概念" class="headerlink" title="先来简单说一下数据库的4个基本概念"></a>先来简单说一下数据库的4个基本概念</h2><ol>
+<li><p>数据</p>
+<p>: 描述事物的符号记录称为数据。</p>
+</li>
+<li><p>数据库（<em>DB</em>）</p>
+<p>: 数据库是长期存储在计算机内、有组织的、可共享的大量数据的集合。数据库中的数据按一定的数据模型组织、描述和储存，具有较小的冗余度、较高的数据独立性和易扩展性，并可为各种用户共享。</p>
+</li>
+<li><p>数据库管理系统(<em>DBMS</em>)</p>
+<p>: 数据库管理系统将数据科学地组织和存储起来，高效的获取和维护数据。数据库管理系统是位于用户与操作系统之间的一层数据管理软件。数据库管理系统和操作系统一样是计算机的基础软件，也是一个大型复杂的软件系统。</p>
+<p>主要功能包括：</p>
+<ul>
+<li>数据定义功能（数据定义语言DDL）</li>
+<li>数据组织，存储和管理</li>
+<li>数据操纵功能（数据操纵语言DML）</li>
+<li>数据库的事务管理和运行管理</li>
+<li>数据库的建立和维护功能</li>
+<li>其他功能（通信功能、 数据转换功能、 互访和互操作功能）</li>
+</ul>
+</li>
+<li><p>数据库系统(<em>DBS</em>)</p>
+<p>: 数据库系统是由数据库、数据库管理系统(及其应用开发工具)、应用程序和数据库管理员（<em>DBA</em>）组成的存储、管理、处理和维护数据的系统。</p>
+</li>
+</ol>
+<h2 id="数据管理技术的产生和发展"><a href="#数据管理技术的产生和发展" class="headerlink" title="数据管理技术的产生和发展"></a>数据管理技术的产生和发展</h2><p>在应用需求的推动下，在计算机硬件、软件发展的基础上，数据管理技术大致经历了人工管理、文件系统、数据库系统三个阶段，这三个阶段的特点以及区别如下所示：</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">人工管理阶段（20世纪50年代中期以前）</th>
+<th align="center">文件系统阶段（20世纪50年代后期到60年代中期）</th>
+<th align="center">数据库系统阶段（20世纪60年代后期）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">应用背景</td>
+<td align="center">科学计算</td>
+<td align="center">科学计算、数据管理</td>
+<td align="center">大规模数据管理</td>
+</tr>
+<tr>
+<td align="center">硬件背景</td>
+<td align="center">无直接存取存储设备</td>
+<td align="center">磁盘、磁鼓</td>
+<td align="center">大容量磁盘、磁盘阵列</td>
+</tr>
+<tr>
+<td align="center">软件背景</td>
+<td align="center">没有操作系统</td>
+<td align="center">有文件系统</td>
+<td align="center">有数据库管理系统</td>
+</tr>
+<tr>
+<td align="center">处理方式</td>
+<td align="center">批处理</td>
+<td align="center">联机实时处理、批处理</td>
+<td align="center">联机实时处理、分步处理、批处理</td>
+</tr>
+<tr>
+<td align="center">数据的管理者</td>
+<td align="center">用户（程序员）</td>
+<td align="center">文件系统</td>
+<td align="center">数据库管理系统</td>
+</tr>
+<tr>
+<td align="center">数据面向的对象</td>
+<td align="center">某一应用程序</td>
+<td align="center">某一应用</td>
+<td align="center">现实世界（一个部门、企业、跨国组织等）</td>
+</tr>
+<tr>
+<td align="center">数据的共享程度</td>
+<td align="center">无共享，冗余度极大</td>
+<td align="center">共享性差。冗余度大</td>
+<td align="center">共享性高，冗余度小</td>
+</tr>
+<tr>
+<td align="center">数据的独立性</td>
+<td align="center">不独立，完全依赖于程序</td>
+<td align="center">独立性差</td>
+<td align="center">具有高度的物理独立性和一定的逻辑独立性</td>
+</tr>
+<tr>
+<td align="center">数据的结构化</td>
+<td align="center">无结构</td>
+<td align="center">记录内有结构，整体无结构</td>
+<td align="center">整体结构化，用数据模型描述</td>
+</tr>
+<tr>
+<td align="center">数据控制能力</td>
+<td align="center">应用程序自己控制</td>
+<td align="center">应用程序自己控制</td>
+<td align="center">由数据库管理系统提供数据安全性、完整性、并发控制和恢复能力</td>
+</tr>
+</tbody></table>
+<p>可以总结出数据库系统的特点，</p>
+<h6 id="数据库系统的特点："><a href="#数据库系统的特点：" class="headerlink" title="数据库系统的特点："></a>数据库系统的特点：</h6><ol>
+<li>数据结构化—–数据库系统实现整体数据的结构化，这是数据库的主要特征之一，也是数据库系统与文件系统的本质区别。</li>
+<li>数据的共享性高、冗余度低且易扩充</li>
+<li>数据独立性高</li>
+<li>数据由数据库管理系统统一管理和控制</li>
+</ol>
+<h1 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h1><p>模型是我们了解现实世界的一种简要工具，逼真的模型可以刻画出事物的本质特征。</p>
+<p>数据模型是数据库系统的核心和基础。</p>
+<p>可以大致将数据模型分为两大类：</p>
+<h5 id="第一类：-概念模型"><a href="#第一类：-概念模型" class="headerlink" title="第一类： 概念模型"></a>第一类： 概念模型</h5><blockquote>
+<p>也称信息模型，是按照用户的观点来对数据和信息建模，主要用于数据库设计。</p>
+</blockquote>
+<h5 id="第二类：-逻辑模型与物理模型"><a href="#第二类：-逻辑模型与物理模型" class="headerlink" title="第二类： 逻辑模型与物理模型"></a>第二类： 逻辑模型与物理模型</h5><blockquote>
+<p>逻辑模型主要包括层次模型、网状模型、关系模型等，它是按照计算机系统的观点对数据建模；</p>
+<p>物理模型是对数据最底层的抽象，它更多的是描述数据在计算机内部的表示方法与存储方式。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>数据库绪论</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>欢迎来到紫羽的博客</title>
+    <url>/2019/10/17/hello-world/</url>
+    <content><![CDATA[<p>我会尽量将自己一路学习编程的历程中，将自己的所学记录下来。</p>
+<p>我是<em>非科班</em>出身，因为对编程感兴趣所以学习，一路都是自己摸爬滚打自学过来的，希望自己可以给你们一些启示，在追梦的道路上越飞越高。</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>启程</title>
     <url>/2019/10/17/article/</url>
     <content><![CDATA[<p>在拼往梦想的道路上，你永远不会孤独。</p>
@@ -18,23 +154,5 @@
         <tag>Hexo</tag>
         <tag>Markdown</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>欢迎来到紫羽的博客</title>
-    <url>/2019/10/15/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
   </entry>
 </search>
